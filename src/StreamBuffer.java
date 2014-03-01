@@ -187,6 +187,10 @@ public abstract class StreamBuffer {
 			case S:
 				value = 128 - value;
 				break;
+			case STANDARD:
+				break;
+			default:
+				break;
 			}
 			return signed ? value : value & 0xff;
 		}
@@ -597,6 +601,10 @@ public abstract class StreamBuffer {
 				case S:
 					value = 128 - value;
 					break;
+				case STANDARD:
+					break;
+				default:
+					break;
 				}
 				data[dataPosition++] = (byte) value;
 			}
@@ -818,6 +826,10 @@ public abstract class StreamBuffer {
 				break;
 			case S:
 				value = 128 - value;
+				break;
+			case STANDARD:
+				break;
+			default:
 				break;
 			}
 			buffer.put((byte) value);

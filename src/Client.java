@@ -514,6 +514,12 @@ public abstract class Client {
 			login();
 			setStage(Stage.LOGGED_IN);
 			break;
+		case LOGGED_IN:
+			break;
+		case LOGGED_OUT:
+			break;
+		default:
+			break;
 		}
 	}
 

@@ -55,6 +55,7 @@ public class PluginHandler {
 	 * 
 	 * @throws Exception
 	 */
+	@SuppressWarnings("resource")
 	public static void loadPlugins() throws Exception {
 		File file = new File("./plugins.ini");
 		BufferedReader reader = new BufferedReader(new FileReader(file));
